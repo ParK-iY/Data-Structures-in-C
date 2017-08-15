@@ -16,7 +16,7 @@ I haven't added any explanation due to lack of time. I'll add them ASAP.
 */
 #include <stdio.h>
 #include <malloc.h>
-#include <conio.h> //Comment this if you're using Linux.
+#include <conio.h> //Comment this if you're not using Windows.
 #include <stdlib.h>
 
 typedef struct Node Node; //So that I don't have to use 'struct Node' everywhere for defining a node. 'Node' would be enough.
@@ -238,6 +238,8 @@ int main() {
 		}
 	}
 	printf("Press any key to close the program...");
-	getch();
+	#ifdef getch
+		getch();
+	#endif
 	return 0;
 }
