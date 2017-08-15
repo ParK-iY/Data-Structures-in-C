@@ -24,7 +24,7 @@ typedef struct Node Node; //So that I don't have to use 'struct Node' everywhere
 struct Node {
 
 	int nValue;
-	Node *nextNode = NULL;
+	Node *nextNode;
 };
 
 
