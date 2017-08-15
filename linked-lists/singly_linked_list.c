@@ -37,7 +37,7 @@ Node
 Node* createNode(int value);
 Node* createNode(int value) {
 
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	Node *newNode = (Node*)malloc(sizeof(Node));
 	newNode->nValue = value;
 	newNode->nextNode = NULL;
 
